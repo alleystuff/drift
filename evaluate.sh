@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd /home/azm0269@auburn.edu/federated_reasoning
-LOG_DIR="federated_reasoning/data/evaluation/"  # Set your desired log directory
+LOG_DIR="drift/data/evaluation/"  # Set your desired log directory
 # mkdir -p "$LOG_DIR"  # Ensure the log directory exists
 
 # nohup python3 -m evaluate > evaluation.log 2>&1 & echo $! > save_pid.txt
