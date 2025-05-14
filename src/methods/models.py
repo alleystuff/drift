@@ -1,6 +1,5 @@
 import os
-# os.environ['HF_HOME'] = "/home/azm0269@auburn.edu/.cache/huggingface/hub" #on gpu 0
-os.environ['HF_HOME'] = "/aiau010_scratch/azm0269/hub" #on gpu 0
+os.environ['HF_HOME'] = "drift/hub" #on gpu 0
 
 import torch
 from peft import PeftConfig, PeftModel
