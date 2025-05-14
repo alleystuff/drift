@@ -10,7 +10,7 @@ utils/: contains utility function used within the code base.
 
 <p align="center">
 <img src="drift_fl.png" width="300" height="250"/>  
-<img src="sp_aggregation.pdf" width="300" height="250"/>  
+<img src="sp_aggregation.png" width="300" height="250"/>  
 </p>
 
 --------------------------------------------------
