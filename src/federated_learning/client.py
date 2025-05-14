@@ -72,7 +72,7 @@ class CustomClient(fl.client.NumPyClient):
         self.set_parameters(parameters=parameters)
         
         # one of the clients will save the model for the respective strategy in the respective strategy's folder
-        all_server_strategies = ['FedAvg', 'FedProx', 'FedMedian', 'FedAvgM']
+        all_server_strategies = ['FedAvg', 'FedProx']
         if int(self.server_round)%5==0 and self.strategy=='FedAvg' and int(self.client_id)==1:
             server_model_directory = f"src/saved_models/server/{self.strategy}/"
             self.dpo_trainer.save_model(server_model_directory) #save the trained client model
@@ -89,7 +89,7 @@ class CustomClient(fl.client.NumPyClient):
                 'seed': self.random_state,
                 'lora_rank': self.lora_rank
             }
-            training_log_filename = '/aiau010_scratch/azm0269/federated_reasoning/data/training_logs/training_log.json'
+            training_log_filename = '/training_log.json'
             append_dict_to_json(
                 file_path=training_log_filename,
                 new_data=training_log
