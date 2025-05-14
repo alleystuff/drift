@@ -1,4 +1,3 @@
-accelerate @ git+https://github.com/huggingface/accelerate.git@8039158d71418e4520113e43bfe3567ffeedd7db
 aiohappyeyeballs==2.4.3
 aiohttp==3.11.2
 aiosignal==1.3.1
