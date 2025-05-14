@@ -55,7 +55,7 @@ def run_server(
     strategy_name="FedAvg",
     thought_data_path="data/thought_data/llama/",
     model_name = "meta-llama/Llama-3.1-8B-Instruct",
-    working_directory="/aiau010_scratch/azm0269/federated_reasoning",
+    working_directory="/drift",
     random_state=42
 ):
     """Run server"""
@@ -187,18 +187,6 @@ def run_server(
             )
         if strategy_name=="FedProx":
             strategy = fedprox.fedprox_strategy(
-                initial_parameters=initial_parameters,
-                client_config=fit_config,
-                strategy_name=strategy_name,
-            )
-        if strategy_name=="FedAdam":
-            strategy = fedadam.fedadam_strategy(
-                initial_parameters=initial_parameters,
-                client_config=fit_config,
-                strategy_name=strategy_name,
-            )
-        if strategy_name=="FedTrimmedAvg":
-            strategy = fedtrimmedavg.fedtrimmedavg_strategy(
                 initial_parameters=initial_parameters,
                 client_config=fit_config,
                 strategy_name=strategy_name,
