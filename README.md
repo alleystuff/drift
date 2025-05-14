@@ -1,6 +1,7 @@
 # Domain Preservation of Large Language Models with Divergence Reduction In Federated Training (DRIFT)  
 -------------------------------------------------
 **Main code repository for DRIFT.** 
+![DRIFT aggregation](drift.pdf)
 ```
 data/: contains utility functions for data processing as well as thought training data.  
 src/: contains all FL methods alongwith training with CPO and DPO.  
