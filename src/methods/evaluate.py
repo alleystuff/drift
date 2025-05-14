@@ -2,8 +2,7 @@
 # import ast
 # import json
 import os
-os.chdir("/aiau010_scratch/azm0269/federated_reasoning")
-# os.chdir("/home/azm0269@auburn.edu/federated_reasoning")
+os.chdir("drift")
 
 import gc
 import torch
