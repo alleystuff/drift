@@ -14,7 +14,7 @@ if __name__=="__main__":
     # strategies = ['FedAvg', 'FedProx', 'Drift', 'FedAdam', 'FedTrimmedAvg']
     
     server_rounds = 5
-    lora_rank=8
+    lora_rank=16
     for random_state in [42]: #client_config_file.TEST_RANDOM_STATES
         for model_name in [client_config_file.MODEL_NAMES[0]]:
             if model_name=="meta-llama/Llama-3.1-8B-Instruct":
