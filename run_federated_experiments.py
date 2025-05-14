@@ -33,7 +33,7 @@ if __name__=="__main__":
                     thought_data_path=thought_data_path,
                     model_name = model_name,
                     lora_rank=lora_rank,
-                    working_directory="/home/azm0269@auburn.edu/federated_reasoning",
+                    working_directory="/drift/",
                     random_state=random_state
                 )
                 training_log = {
@@ -44,6 +44,6 @@ if __name__=="__main__":
                     "random_state": random_state,
                 }
                 append_dict_to_json(
-                    file_path="/aiau010_scratch/azm0269/federated_reasoning/data/training_logs/server_logs.json",
+                    file_path="drift/server_logs.json",
                     new_data=training_log
                 )
